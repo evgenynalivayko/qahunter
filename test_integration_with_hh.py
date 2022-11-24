@@ -43,5 +43,3 @@ def test_integration_with_hh():
     # Проверяю, что на сайте ссылка на вторую вакансию соотвествует ссылке взятой с hh.ru
     browser.element('(//div[@class="card__body"])[2]/a').should(have.attribute("href", vacancy_url))
 
-    import time
-    time.sleep(5)
